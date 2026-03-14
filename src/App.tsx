@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <Provider store={store}>
-        <BrowserRouter>
+        <BrowserRouter basename="/Cryptonite/">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />

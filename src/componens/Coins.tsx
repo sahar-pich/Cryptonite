@@ -56,7 +56,7 @@ const Coins = () => {
                 <>
                     <div className="coinErrorCard">
                         <h3 className="loading" style={{ color: 'var(--error)', fontWeight: '600' }}>{error}</h3>
-                        <img src='/Cryptonite/assets/images/spinner.gif' style={{ filter: "saturate(50%)" }} />
+                        <img src='./assets/images/spinner.gif' style={{ filter: "saturate(50%)" }} />
                     </div>
                 </>
                 :

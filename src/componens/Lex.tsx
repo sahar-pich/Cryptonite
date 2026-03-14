@@ -178,9 +178,9 @@ const Lex = () => {
 
                         <button id="askAiButton" title="Ask AI" onClick={askAI} >
                             {loading ?
-                                <img src="/Cryptonite/assets/images/spinner.gif" style={{ filter: "saturate(50%)" }} />
+                                <img src="./assets/images/spinner.gif" style={{ filter: "saturate(50%)" }} />
                                 :
-                                <img src="/Cryptonite/assets/images/crypto_chat-icon.png" />
+                                <img src="./assets/images/crypto_chat-icon.png" />
                             }
                         </button>
                     </div>

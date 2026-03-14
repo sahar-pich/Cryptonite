@@ -1,0 +1,124 @@
+#aboutMainDiv {
+    background-color: var(--darker);
+    border: 0.1rem solid var(--secondary);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 40px -10px rgba(35, 181, 116, 0.25);
+    opacity: 0.99;
+    padding: 0 2rem 2rem 2rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#aboutMainDiv h2 {
+    text-align: center;
+    color: var(--secondary);
+    letter-spacing: 0.1rem;
+}
+
+#projectDescription {
+    margin-bottom: 3rem;
+    padding: 1.5rem 2rem;
+    background-color: var(--dark);
+    border-radius: 0.5rem;
+}
+
+#projectDescription h3 {
+    color: var(--secondary);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+#projectDescription p {
+    color: var(--gray);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+#personalDetailsSection {
+    margin-top: 3rem;
+}
+
+#personalDetailsSection h3 {
+    color: var(--secondary);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#personalDetailsContainer {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: var(--dark);
+    border-radius: 1rem;
+    flex-wrap: wrap;
+}
+
+#photoSection {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+#profilePhoto {
+    width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    border: 3px solid var(--secondary);
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(52, 181, 116, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#profilePhoto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(52, 181, 116, 0.5);
+}
+
+#detailsSection {
+    flex: 1;
+    min-width: 250px;
+}
+
+#detailsSection h4 {
+    color: var(--secondary);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+#detailsSection p {
+    color: var(--gray);
+    margin: 0.75rem 0;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+#detailsSection strong {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    #aboutMainDiv {
+        padding: 2rem 1rem;
+        margin: 1rem;
+    }
+
+    #aboutMainDiv h2 {
+        font-size: 1.5rem;
+    }
+
+    #personalDetailsContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #detailsSection {
+        width: 100%;
+    }
+}

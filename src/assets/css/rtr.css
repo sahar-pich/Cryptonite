@@ -1,0 +1,66 @@
+/* Real Time Report */
+#rtrMainDiv {
+    background-color: var(--darker);
+    border: 0.1rem solid var(--secondary);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 40px -10px rgba(35, 181, 116, 0.25);
+    opacity: 0.99;
+}
+
+#reportMainDiv {
+    text-align: center;
+}
+
+#reportPrices {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+#reportMainDiv h3 {
+    color: var(--gray)
+}
+
+#reportMainDiv p:nth-child(1) {
+    color: #34b574;
+}
+
+#reportMainDiv p:nth-child(2) {
+    color: #ff6a54;
+}
+
+#reportMainDiv p:nth-child(3) {
+    color: #adc1b4;
+}
+
+#reportMainDiv p:nth-child(4) {
+    color: #00a2ff;
+}
+
+#reportMainDiv p:nth-child(5) {
+    color: #f8a32f;
+}
+
+#noCoinsSelected {
+    color: var(--secondary) !important;
+    font-weight: 500;
+}
+
+#noCoinsDescription {
+    color: var(--secondary-pale) !important;
+    font-size: 0.9rem;
+}
+
+#chartDescription {
+    color: var(--gray);
+    text-align: center;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+}
+
+.chartToolTip {
+    background-color: rgba(30, 55, 70, 0.9);
+    padding: 0rem 1rem;
+    border: 0.1rem solid var(--dark);
+    border-radius: 0.25rem;
+}

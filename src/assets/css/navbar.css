@@ -1,0 +1,76 @@
+/* Navbar */
+h1, h2 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--darker);
+    border-bottom: 0.1rem solid var(--main);
+    padding: 0 10rem;
+}
+
+#homePageLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 0.1rem;
+}
+
+#navImage {
+    height: 3rem;
+}
+
+#siteTitle {
+    color: var(--main);
+    font-size: 1.25rem;
+    transition: .2s;
+    margin: 0;
+}
+
+#siteTitle:hover {
+    color: var(--secondary);
+}
+
+
+#navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navLink {
+    text-decoration: none;
+    color: var(--main);
+    font-weight: 600;
+    transition: .2s;
+    font-size: 0.9rem;
+}
+
+.navLink:hover {
+    color: var(--secondary);
+}
+
+.navLink.active {
+    color: var(--secondary);
+}
+
+#coinSearch {
+    height: 1.5rem;
+    padding-left: 2rem;
+    background-color: var(--dark);
+    color: var(--white);
+    border-radius: 1rem;
+    background-image: url('../images/search_icon.png');
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 1rem;
+}
+
+#coinSearch:focus {
+    outline: none;
+}

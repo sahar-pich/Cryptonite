@@ -1,0 +1,47 @@
+/* * {
+    border: 1px solid black;
+} */
+
+:root {
+    --dark: #1e3746;
+    --darkRGBA: 30, 55, 70;
+    /* rgba(30, 55, 70, 1) */
+    --darker: #0d2635;
+    --dark-hover: #2f4857;
+    --main: #23b574;
+    --secondary: #f7921e;
+    --white: #eeeeee;
+    --gray: #dddddd;
+    --secondary-hover: #e6810d;
+    --secondary-active: #d5700c;
+    --secondary-pale: #f8a32f;
+    --error: #dd3223;
+    --error-hover: #cc2112;
+    --error-active: #bb1001;
+    --error-pale: #ee4334;
+    --back: #5b6d63;
+    --back-hover: #4a5c52;
+    --back-active: #394b41;
+    --back-pale: #6c7e74;
+    --back-dark: #283a30;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    background-color: var(--dark);
+    background-color: var(--dark);
+    color: var(--main);
+    background-image: url('../images/parallax_bg-transparent.gif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}

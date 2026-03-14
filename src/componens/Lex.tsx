@@ -53,7 +53,9 @@ const Lex = () => {
         }
 
         try {
-            const response = await fetch("/nvidia/v1/chat/completions", {
+            const corsProxy = 'https://corsproxy.io/?';
+            const apiUrl = 'https://integrate.api.nvidia.com/v1/chat/completions';
+            const response = await fetch(corsProxy + apiUrl, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -100,7 +102,9 @@ const Lex = () => {
     // Error Message
     const errorMessage = async () => {
         try {
-            const response = await fetch("/nvidia/v1/chat/completions", {
+            const corsProxy = 'https://corsproxy.io/?';
+            const apiUrl = 'https://integrate.api.nvidia.com/v1/chat/completions';
+            const response = await fetch(corsProxy + apiUrl, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -139,7 +143,9 @@ const Lex = () => {
 
     const welcomeMessage = async () => {
         try {
-            const response = await fetch("/nvidia/v1/chat/completions", {
+            const corsProxy = 'https://corsproxy.io/?';
+            const apiUrl = 'https://integrate.api.nvidia.com/v1/chat/completions';
+            const response = await fetch(corsProxy + apiUrl, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

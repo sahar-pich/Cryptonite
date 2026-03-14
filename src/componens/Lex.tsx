@@ -53,8 +53,8 @@ const Lex = () => {
         }
 
         try {
-            const corsProxy = 'https://corsproxy.io/?';
-            const apiUrl = 'https://integrate.api.nvidia.com/v1/chat/completions';
+            const corsProxy = 'https://api.allorigins.win/raw?url=';
+            const apiUrl = encodeURIComponent('https://integrate.api.nvidia.com/v1/chat/completions');
             const response = await fetch(corsProxy + apiUrl, {
                 method: "POST",
                 headers: {
@@ -102,8 +102,8 @@ const Lex = () => {
     // Error Message
     const errorMessage = async () => {
         try {
-            const corsProxy = 'https://corsproxy.io/?';
-            const apiUrl = 'https://integrate.api.nvidia.com/v1/chat/completions';
+            const corsProxy = 'https://api.allorigins.win/raw?url=';
+            const apiUrl = encodeURIComponent('https://integrate.api.nvidia.com/v1/chat/completions');
             const response = await fetch(corsProxy + apiUrl, {
                 method: "POST",
                 headers: {
@@ -143,8 +143,8 @@ const Lex = () => {
 
     const welcomeMessage = async () => {
         try {
-            const corsProxy = 'https://corsproxy.io/?';
-            const apiUrl = 'https://integrate.api.nvidia.com/v1/chat/completions';
+            const corsProxy = 'https://api.allorigins.win/raw?url=';
+            const apiUrl = encodeURIComponent('https://integrate.api.nvidia.com/v1/chat/completions');
             const response = await fetch(corsProxy + apiUrl, {
                 method: "POST",
                 headers: {

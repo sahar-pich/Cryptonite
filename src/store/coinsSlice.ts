@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import coinsArray from '../data/coins'
+// import coinsArray from '../data/coins'
 
 type Coin = {
     id: string,
@@ -9,10 +9,10 @@ type Coin = {
 }
 
 export const fetchCoins = createAsyncThunk('coins/fetchCoins', async () => {
-    // const response = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd`);
-    // const data = await response.json();
-    // return data;
-    return coinsArray;
+    const response = await fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd`);
+    const data = await response.json();
+    return data;
+    // return coinsArray;
 });
 
 const coinsSlice = createSlice({

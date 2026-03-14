@@ -11,7 +11,7 @@ const Navbar = () => {
         <>
             <nav>
                 <NavLink to='/' id="homePageLink">
-                    <img id="navImage" title="Home" alt="Home Page Button" src='./src/assets/images/cryptonite_logo_notext-cut-transparent.png' />
+                    <img id="navImage" title="Home" alt="Home Page Button" src='/Cryptonite/assets/images/cryptonite_logo_notext-cut-transparent.png' />
                     <h1 id="siteTitle">Cryptonite</h1>
                 </NavLink>
                 <div id="navLinks">

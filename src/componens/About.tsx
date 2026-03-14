@@ -19,7 +19,7 @@ const About = () => {
                 <h3>About the Developer</h3>
                 <div id="personalDetailsContainer">
                     <div id="photoSection">
-                        <img src="./src/assets/images/student_pic.jpg" alt="Developer Profile" id="profilePhoto" />
+                        <img src="/Cryptonite/assets/images/student_pic.jpg" alt="Developer Profile" id="profilePhoto" />
                     </div>
                     <div id="detailsSection">
                         <h4>Personal Details</h4>

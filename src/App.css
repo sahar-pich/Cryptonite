@@ -19,7 +19,7 @@ main {
     border-radius: 1rem;
     opacity: 0.99;
     transition: .3s;
-    background-image: url('/assets/images/reset_button.png');
+    background-image: url('./assets/images/reset_button.png');
     background-repeat: no-repeat;
     background-position: 40%;
     background-size: 90%;
@@ -31,7 +31,7 @@ main {
     background-color: var(--dark-hover);
     border: 0.1rem solid var(--main);
     box-shadow: 0 5px 20px -5px rgba(74, 92, 82, 0.4);
-    background-image: url('/assets/images/reset_button-hover.png');
+    background-image: url('./assets/images/reset_button-hover.png');
 }
 
 #resetButton:active {

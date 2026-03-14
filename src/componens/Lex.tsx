@@ -53,7 +53,7 @@ const Lex = () => {
         }
 
         try {
-            const response = await fetch("https://integrate.api.nvidia.com/v1/chat/completions", {
+            const response = await fetch("/nvidia/v1/chat/completions", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -100,7 +100,7 @@ const Lex = () => {
     // Error Message
     const errorMessage = async () => {
         try {
-            const response = await fetch("https://integrate.api.nvidia.com/v1/chat/completions", {
+            const response = await fetch("/nvidia/v1/chat/completions", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -139,7 +139,7 @@ const Lex = () => {
 
     const welcomeMessage = async () => {
         try {
-            const response = await fetch("https://integrate.api.nvidia.com/v1/chat/completions", {
+            const response = await fetch("/nvidia/v1/chat/completions", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -205,9 +205,9 @@ const Lex = () => {
 
                         <button id="askAiButton" title="Ask AI" onClick={askAI} >
                             {loading ?
-                                <img src="/assets/images/spinner.gif" style={{ filter: "saturate(50%)" }} />
+                                <img src={`${import.meta.env.BASE_URL}assets/images/spinner.gif`} style={{ filter: "saturate(50%)" }} />
                                 :
-                                <img src="/assets/images/crypto_chat-icon.png" />
+                                <img src={`${import.meta.env.BASE_URL}assets/images/crypto_chat-icon.png`} />
                             }
                         </button>
                     </div>
